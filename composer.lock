@@ -1,0 +1,166 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "63bb595d37b4b9bb0bd8492c1a447807",
+    "packages": [
+        {
+            "name": "nikic/fast-route",
+            "version": "v1.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nikic/FastRoute.git",
+                "reference": "181d480e08d9476e61381e04a71b34dc0432e812"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nikic/FastRoute/zipball/181d480e08d9476e61381e04a71b34dc0432e812",
+                "reference": "181d480e08d9476e61381e04a71b34dc0432e812",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4.8.35|~5.7"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "src/functions.php"
+                ],
+                "psr-4": {
+                    "FastRoute\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Nikita Popov",
+                    "email": "nikic@php.net"
+                }
+            ],
+            "description": "Fast request router for PHP",
+            "keywords": [
+                "router",
+                "routing"
+            ],
+            "support": {
+                "issues": "https://github.com/nikic/FastRoute/issues",
+                "source": "https://github.com/nikic/FastRoute/tree/master"
+            },
+            "time": "2018-02-13T20:26:39+00:00"
+        },
+        {
+            "name": "phputil/json",
+            "version": "1.3.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/thiagodp/json.git",
+                "reference": "058e07a47ef28983fceb94f98d7edf08983f08ef"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/thiagodp/json/zipball/058e07a47ef28983fceb94f98d7edf08983f08ef",
+                "reference": "058e07a47ef28983fceb94f98d7edf08983f08ef",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3",
+                "phputil/rtti": ">=1.4"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "phputil\\": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Thiago Delgado Pinto"
+                }
+            ],
+            "description": "A JSON encoder and decoder that can also convert PHP objects with private or protected attributes.",
+            "homepage": "http://github.com/thiagodp/json",
+            "keywords": [
+                "decode",
+                "encode",
+                "json",
+                "object",
+                "php",
+                "private",
+                "protected"
+            ],
+            "support": {
+                "issues": "https://github.com/thiagodp/json/issues",
+                "source": "https://github.com/thiagodp/json"
+            },
+            "time": "2018-01-27T16:57:59+00:00"
+        },
+        {
+            "name": "phputil/rtti",
+            "version": "1.4.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/thiagodp/rtti.git",
+                "reference": "513056bb2843bbf495a83f8a1481c9aaec120c4b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/thiagodp/rtti/zipball/513056bb2843bbf495a83f8a1481c9aaec120c4b",
+                "reference": "513056bb2843bbf495a83f8a1481c9aaec120c4b",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.2.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "phputil\\": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Thiago Delgado Pinto"
+                }
+            ],
+            "description": "A Run-Time Type Information extractor, useful for getting/setting private attributes from/to PHP objects.",
+            "homepage": "http://github.com/thiagodp/rtti",
+            "keywords": [
+                "php",
+                "private",
+                "protected",
+                "rtti",
+                "run-time"
+            ],
+            "support": {
+                "issues": "https://github.com/thiagodp/rtti/issues",
+                "source": "https://github.com/thiagodp/rtti"
+            },
+            "time": "2018-01-27T17:00:23+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": [],
+    "plugin-api-version": "2.2.0"
+}
