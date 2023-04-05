@@ -1,9 +1,10 @@
 <?php
 namespace Models;
 
+use Entity\Annonce;
 use \phputil\JSON;
 
-class annonceModel{
+class AnnonceModel{
 
     private $mesAnnonces; 
     private $file; 

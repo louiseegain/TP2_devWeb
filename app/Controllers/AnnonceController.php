@@ -4,18 +4,18 @@ namespace Controllers;
 
 require_once("../Util/view.php");
 
-use Models\annonceModel;
+use Models\AnnonceModel;
 use Util\View;
 
 class AnnonceController
 {
-    public function list(){
-        $annonceModel = new annonceModel; 
+    public function AfficherListAnnonce(){
+        $annonceModel = new AnnonceModel;
         $annonces = $annonceModel->getAnnonces(); 
         
         $data = ["annonces" => $annonces]; 
         $view = new View(); 
-        $view->render("Annonce/list",$data);
+        $view->render("Annonces/list",$data);
     }
 }
 

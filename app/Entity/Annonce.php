@@ -1,5 +1,5 @@
 <?php
-namespace Models;
+namespace Entity;
 
 class Annonce{
     private $villeD;
