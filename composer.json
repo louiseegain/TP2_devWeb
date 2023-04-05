@@ -1,0 +1,15 @@
+{
+  "autoload": {
+  "psr-4": {
+  "Controllers\\": "app\\Controllers",
+  "Models\\": "app\\Models",
+  "Entity\\": "app\\Entity",
+  "Util\\": "util"
+  }, 
+  "files": ["./app/fonction/afficher_annonces.php"]
+  },
+  "require": {
+    "nikic/fast-route": "^1.3",
+    "phputil/json": "^1.3"
+  }
+}
