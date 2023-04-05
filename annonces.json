@@ -1,0 +1,24 @@
+[
+    {
+        "villeDepart" : "Nantes", 
+        "villeArrivee" : "Paris", 
+        "date" : "01-02-2023", 
+        "modelVoiture" : "kia niro",
+        "nbrPlace" : 4, 
+        "email" : "suzanne.collins@gmail.com", 
+        "tel" : "0755628920",
+        "nom" : "collins",
+        "prenom" :"suzanne"
+    }, 
+    {
+        "villeDepart" : "Heric", 
+        "villeArrivee" : "Orvault", 
+        "date" : "03-04-2023", 
+        "modelVoiture" : "nissan kashkai",
+        "nbrPlace" : 4, 
+        "email" : "harry.potter@gmail.com", 
+        "tel" : "0626668945",
+        "nom" : "potter",
+        "prenom" :"harry"
+    }
+]
