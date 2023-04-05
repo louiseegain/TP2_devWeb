@@ -15,7 +15,7 @@ class AnnonceController
         
         $data = ["annonces" => $annonces]; 
         $view = new View(); 
-        $view->render("Annonces/list",$data);
+        $view->render("Annonces/listAnnonces",$data);
     }
 }
 

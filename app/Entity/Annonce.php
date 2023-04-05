@@ -5,7 +5,7 @@ class Annonce{
     private $villeD;
     private $villeA; 
     private $date; 
-    private $modèleVoiture; 
+    private $modeleVoiture; 
     private $nbPlaces;
     private $email;
     private $tel; 
@@ -17,7 +17,7 @@ class Annonce{
         $this->villeD = $Vdepart;
         $this->villeA = $Varrivee;
         $this->date = $dateA; 
-        $this->modèleVoiture = $modVoiture;
+        $this->modeleVoiture = $modVoiture;
         $this->nbPlaces = $nbPlacesDispo;
         $this->email = $mail;
         $this->tel = $tel; 
@@ -41,7 +41,7 @@ class Annonce{
     }
 
     public function getVoiture(){    
-        return $this->modèleVoiture;
+        return $this->modeleVoiture;
     }
 
     public function getNbPlace(){
