@@ -8,6 +8,7 @@ $dispatcher = FastRoute\simpleDispatcher(function(FastRoute\RouteCollector $r) {
     });
 
     $r->addRoute('GET', '/annonces', 'afficher_annonces');
+    $r->addRoute('GET', '/annonces/{id}', 'afficher_une_annonce');
  
 
     /*

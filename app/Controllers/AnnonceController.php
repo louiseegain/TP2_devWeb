@@ -17,6 +17,15 @@ class AnnonceController
         $view = new View(); 
         $view->render("Annonces/listAnnonces",$data);
     }
+
+    public function AfficherUneAnnonce($id){
+        $annonceModel = new AnnonceModel;
+        $annonce = $annonceModel->getUneAnnonce($id); 
+
+        $data = ["annonce" => $annonce]; 
+        $view = new View(); 
+        $view->render("Annonces/uneAnnonce",$data);
+    }
 }
 
 ?>

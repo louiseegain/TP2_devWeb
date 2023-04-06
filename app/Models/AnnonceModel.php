@@ -16,13 +16,24 @@ class AnnonceModel{
         $data = file_get_contents($this->file);
         $obj = json_decode($data);
         foreach($obj as $annonce){
-            $monAnnonce = new Annonce( $annonce->villeDepart,$annonce->villeArrivee,$annonce->date, $annonce->modelVoiture,$annonce->nbrPlace, $annonce->email, $annonce->tel, $annonce->nom, $annonce->prenom);
+            $monAnnonce = new Annonce($annonce->idAnnonce, $annonce->villeDepart,$annonce->villeArrivee,$annonce->date, $annonce->modelVoiture,$annonce->nbrPlace, $annonce->email, $annonce->tel, $annonce->nom, $annonce->prenom);
             $this->mesAnnonces[]=($monAnnonce);
         }
     }
 
     public function getAnnonces(){
         return $this->mesAnnonces;
+    }
+
+
+    public function getUneAnnonce($id){
+        $annonceRetour = null; 
+        foreach ($this->mesAnnonces as $annonce){
+            if($annonce->getId() == $id){
+                $annonceRetour = $annonce; 
+            }
+        }
+        return $annonceRetour; 
     }
 
 

@@ -8,4 +8,5 @@ $baseDir = dirname($vendorDir);
 return array(
     '253c157292f75eb38082b5acb06f3f01' => $vendorDir . '/nikic/fast-route/src/functions.php',
     '75a8fab6e0291bc5f6624a8b180f0c4f' => $baseDir . '/app/fonction/afficher_annonces.php',
+    '4884a96d936abe14329ee1596734e992' => $baseDir . '/app/fonction/afficher_une_annonce.php',
 );

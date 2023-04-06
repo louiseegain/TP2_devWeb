@@ -17,13 +17,13 @@ echo "<html>
 
 
 
-
+<div style=' display: flex; flex-wrap: wrap;justify-content: space-around;   margin-top:10%; '>
 
 <?php
         foreach($annonces as $annonce){
 
             echo "
-            <div style=' display: flex; flex-wrap: wrap; '>
+            
 
     <div class='carte' style='background-color:white; width:250px; height:130px; border-radius:10px; padding:10px; margin:10px; '>
         <div style='width:60px; height:60px; position:absolute; '>
@@ -38,7 +38,7 @@ echo "<html>
             <strong> Date :</strong> ".$annonce->getDate()." 
         </div>
 
-        <a href=# style=' position:absolute;text-decoration:none; margin-top:90px; background-color:purple; color:white; width:250px; border-radius:5px; text-align:center; padding-top:10px; padding-bottom:10px;'>
+        <a href='/annonces/".$annonce->getId()."'  style=' position:absolute;text-decoration:none; margin-top:90px; background-color:purple; color:white; width:250px; border-radius:5px; text-align:center; padding-top:10px; padding-bottom:10px;'>
         Visualiser l'annonce
         </a>
 

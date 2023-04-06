@@ -2,6 +2,7 @@
 namespace Entity;
 
 class Annonce{
+    private $id;
     private $villeD;
     private $villeA; 
     private $date; 
@@ -12,8 +13,9 @@ class Annonce{
     private $nom; 
     private $prenom;
 
-    public function __construct($Vdepart, $Varrivee, $dateA, $modVoiture, $nbPlacesDispo, $mail, $tel, $nom, $prenom)
+    public function __construct($id,$Vdepart, $Varrivee, $dateA, $modVoiture, $nbPlacesDispo, $mail, $tel, $nom, $prenom)
     {
+        $this->id = $id;
         $this->villeD = $Vdepart;
         $this->villeA = $Varrivee;
         $this->date = $dateA; 
@@ -63,6 +65,9 @@ class Annonce{
     public function getPrenom(){
         return $this->prenom;
     }
+    public function getId(){
+        return $this->id;
+    }
     ///////////////////////////////////////////////////////////////////////
     //                     Setteurs de l'entity annonces                 //
     ///////////////////////////////////////////////////////////////////////
@@ -81,7 +86,7 @@ class Annonce{
     }
     public function setVoiture($modVoiture)
     {
-        $this->modèleVoiture=$modVoiture;
+        $this->modeleVoiture=$modVoiture;
     }
     public function setNbPlace($nbPlacesDispo)
     {
