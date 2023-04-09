@@ -4,8 +4,8 @@ require '../vendor/autoload.php';
 $dispatcher = FastRoute\simpleDispatcher(function(FastRoute\RouteCollector $r) {
     
     $r->get('/', function() {
-        echo '<h1>page d\' acceuil</h1> <br/>';
-        echo'<a href="/annonces">visualiser les annonces =></a>';
+        echo '<h1>page d\' accueil</h1> <br/>';
+        echo'<a href="/annonces">Visualiser les annonces =></a>';
     });
 
     $r->addRoute('GET', '/annonces', 'afficher_annonces');

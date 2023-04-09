@@ -65,15 +65,15 @@ echo "<html>
             <strong> Date :</strong> <input style='position:relative; width: 100px;' type=date name=date value='".$annonce->getDate()."' required>
         </div>
         <div style=' width:100%; height: 60%; margin-top:90px;'>
-        <h3>Informations vehicule:</h3>
+        <h3>Informations véhicule:</h3>
         Voiture : <input style='position:relative; width: 100px;' type=text name=voiture value='".$annonce->getVoiture()."' required></br>
-        nombre de places : <input style='position:relative; width: 100px;' type=number name=nbPlace value='".$annonce->getNbPlace()."' min=0 required></br>
+        Nombre de places : <input style='position:relative; width: 100px;' type=number name=nbPlace value='".$annonce->getNbPlace()."' min=0 required></br>
         <hr/>
         <h3>Informations conducteur:</h3>
-        Nom :<input style='position:relative; width: 100px;' type=text name=nom value='".$annonce->getNom()."' required></br>
-        Prenom :<input  style='position:relative; width: 100px;' type=text name=prenom value='".$annonce->getPrenom()."' required></br>
-        Mail :<input  style='position:relative; width: 200px;' type=mail name=mail value='".$annonce->getEmail()."' required></br>
-        Tel : <input  style='position:relative; width: 200px;' type=number name=telephone value='".$annonce->getTel()."' min=0700000000 max=0999999999 required></br>
+        Nom : <input style='position:relative; width: 100px;' type=text name=nom value='".$annonce->getNom()."' required></br>
+        Prénom : <input  style='position:relative; width: 100px;' type=text name=prenom value='".$annonce->getPrenom()."' required></br>
+        Mail : <input  style='position:relative; width: 200px;' type=mail name=mail value='".$annonce->getEmail()."' required></br>
+        Téléphone : <input  style='position:relative; width: 200px;' type=number name=telephone value='".$annonce->getTel()."' min=0700000000 max=0999999999 required></br>
 
 
         </div>
