@@ -30,13 +30,11 @@ echo "<html>
             <img src='/logo_utilisateur.png' style='width:60px; height:auto; '>
         </div>
 
-        <input name='id' type='hidden' >
-
 
         <div style='width:177px; height:60px; position:absolute;  margin-left: 70px; font-size:1.10em;'>
             <strong>Départ :</strong> 
             
-            <select name=villeD id=villeD>";
+            <select name=villeD id=villeD required>";
             foreach($villes as $ville){
 
                     echo "<option value=".$ville->getId().">".$ville->getNom()."</option>";
@@ -49,7 +47,7 @@ echo "<html>
 
 
             </br>
-            <strong>Arrivée :</strong><select name=villeA id=villeA>";
+            <strong>Arrivée :</strong><select name=villeA id=villeA required>";
             foreach($villes as $ville){
 
                     echo "<option value=".$ville->getId().">".$ville->getNom()."</option>";
@@ -58,18 +56,18 @@ echo "<html>
             echo"
             </select>
             </br>
-            <strong> Date :</strong> <input style='position:relative; width: 100px;' type=date name=date>
+            <strong> Date :</strong> <input style='position:relative; width: 100px;' type=date name=date required>
         </div>
         <div style=' width:100%; height: 60%; margin-top:100px;'>
         <h3>Informations vehicule:</h3>
-        Voiture : <input style='position:relative; width: 100px;' type=text name=voiture ></br>
-        nombre de places : <input style='position:relative; width: 100px;' type=number name=nbPlace  min=0></br>
+        Voiture : <input style='position:relative; width: 100px;' type=text name=voiture required ></br>
+        nombre de places : <input style='position:relative; width: 100px;' type=number name=nbPlace  min=0 required></br>
         <hr/>
         <h3>Informations conducteur:</h3>
-        Nom :<input style='position:relative; width: 100px;' type=text name=nom ></br>
-        Prenom :<input  style='position:relative; width: 100px;' type=text name=prenom ></br>
-        Mail :<input  style='position:relative; width: 200px;' type=mail name=mail ></br>
-        Tel : <input  style='position:relative; width: 200px;' type=number name=telephone ></br>
+        Nom :<input style='position:relative; width: 100px;' type=text name=nom required></br>
+        Prenom :<input  style='position:relative; width: 100px;' type=text name=prenom required></br>
+        Mail :<input  style='position:relative; width: 200px;' type=mail name=mail required></br>
+        Tel : <input  style='position:relative; width: 200px;' type=number name=telephone required min=0700000000 max=0999999999></br>
 
 
         </div>
