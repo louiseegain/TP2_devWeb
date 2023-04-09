@@ -58,7 +58,7 @@ class AnnonceModel{
             echo ($retour);
             echo'<a href="/annonces">Retour à la page d\'accueil</a>';
         }else{
-            header('Location: /annonces');
+           header('Location: /annonces');
         }
     }
 
@@ -69,7 +69,7 @@ class AnnonceModel{
             echo ($retour);
             echo'<a href="/annonces">Retour à la page d\'accueil</a>';
         }else{
-            header('Location : /annonces');
+            header('Location: /annonces');
         }
     }
 
@@ -80,7 +80,7 @@ class AnnonceModel{
             echo ($retour);
             echo'<a href="/annonces">Retour à la page d\'accueil</a>';
         }else{
-            header('Location : /annonces');
+            header('Location: /annonces');
         }
     }
 

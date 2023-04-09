@@ -34,11 +34,11 @@ echo "<html>
         </div>
 
         <div style='width:380px; height:60px; position:absolute;  margin-left: 70px; font-size:1.10em;'>
-            <strong>Départ : </strong> ".$annonce->getVilleD()->getNom()."
+            <strong>Départ :</strong> ".$annonce->getVilleD()->getNom()."
             </br>
-            <strong>Arrivée : </strong> ".$annonce->getVilleA()->getNom()."
+            <strong>Arrivée :</strong> ".$annonce->getVilleA()->getNom()."
             </br>
-            <strong> Date : </strong> ".$annonce->getDate()." 
+            <strong> Date :</strong> ".$annonce->getDate()." 
         </div>
 
         <a href='/annonces/".$annonce->getId()."'  style=' position:absolute;text-decoration:none; margin-top:90px; background-color:purple; color:white; width:400px; border-radius:5px; text-align:center; padding-top:10px; padding-bottom:10px;'>

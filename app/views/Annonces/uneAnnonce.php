@@ -43,7 +43,7 @@ echo "<html>
             <strong> Date : </strong> ".$annonce->getDate()." 
         </div>
         <div style=' width:100%; height: 60%; margin-top:90px;'>
-        <h3>Informations vehicule:</h3>
+        <h3>Informations véhicule:</h3>
         Voiture : ".$annonce->getVoiture()." </br>
         Nombre de places : ".$annonce->getNbPlace()."</br>
         <hr/>
