@@ -36,22 +36,22 @@ echo "<html>
         </div>
 
         <div style='width:400px; height:60px; position:absolute;  margin-left: 70px; font-size:1.10em;'>
-            <strong>Départ :</strong> ".$annonce->getVilleD()->getNom()."
+            <strong>Départ : </strong> ".$annonce->getVilleD()->getNom()."
             </br>
-            <strong>Arrivée :</strong> ".$annonce->getVilleA()->getNom()."
+            <strong>Arrivée : </strong> ".$annonce->getVilleA()->getNom()."
             </br>
-            <strong> Date :</strong> ".$annonce->getDate()." 
+            <strong> Date : </strong> ".$annonce->getDate()." 
         </div>
         <div style=' width:100%; height: 60%; margin-top:90px;'>
         <h3>Informations vehicule:</h3>
         Voiture : ".$annonce->getVoiture()." </br>
-        nombre de places : ".$annonce->getNbPlace()."</br>
+        Nombre de places : ".$annonce->getNbPlace()."</br>
         <hr/>
         <h3>Informations conducteur:</h3>
-        Nom :".$annonce->getNom()."</br>
-        Prenom : ".$annonce->getPrenom()."</br>
-        Mail :".$annonce->getEmail()."</br>
-        Tel : ".$annonce->getTel()."</br>
+        Nom : ".$annonce->getNom()."</br>
+        Prénom : ".$annonce->getPrenom()."</br>
+        Mail : ".$annonce->getEmail()."</br>
+        Téléphone : ".$annonce->getTel()."</br>
 
 
         </div>
