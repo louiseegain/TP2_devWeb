@@ -4,13 +4,17 @@ require '../vendor/autoload.php';
 $dispatcher = FastRoute\simpleDispatcher(function(FastRoute\RouteCollector $r) {
     
     $r->get('/', function() {
-        echo 'page d\' acceuil';
+        echo '<h1>page d\' acceuil</h1> <br/>';
+        echo'<a href="/annonces">visualiser les annonces =></a>';
     });
 
     $r->addRoute('GET', '/annonces', 'afficher_annonces');
     $r->addRoute('GET', '/annonces/{id}', 'afficher_une_annonce');
- 
-
+    $r->addRoute('GET', '/add/annonce', 'ajouter_une_annonce');
+    $r->addRoute('GET', '/update/annonce/{id}', 'modifier_une_annonce');
+    $r->addRoute('POST', '/validate/update/annonce', 'valider_modifier_une_annonce');
+    $r->addRoute('POST', '/validate/add/annonce', 'valider_ajout_une_annonce');
+    $r->addRoute('GET', '/delete/annonce/{id}', 'supprimer_annonce');
     /*
     $r->get('/books/{id}', function ($args) {
         // Show book identified by $args['id']
@@ -64,7 +68,6 @@ switch ($routeInfo[0]) {
     case FastRoute\Dispatcher::FOUND:
         $handler = $routeInfo[1];
         $vars = $routeInfo[2];
-      
         print $handler($vars);
         break;
 }

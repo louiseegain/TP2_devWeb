@@ -9,4 +9,10 @@ return array(
     '253c157292f75eb38082b5acb06f3f01' => $vendorDir . '/nikic/fast-route/src/functions.php',
     '75a8fab6e0291bc5f6624a8b180f0c4f' => $baseDir . '/app/fonction/afficher_annonces.php',
     '4884a96d936abe14329ee1596734e992' => $baseDir . '/app/fonction/afficher_une_annonce.php',
+    '050ef10511157208b4adc8b1e6c9cacd' => $baseDir . '/app/fonction/ajouter_une_annonce.php',
+    '1b31bcf212b45ea3257f07e9a75a8443' => $baseDir . '/app/fonction/modifier_une_annonce.php',
+    '49742db968b5e46a15b25a28e46e1433' => $baseDir . '/app/fonction/valider_modifier_une_annonce.php',
+    '9ddd44032f5a5ead354045b93cb546c8' => $baseDir . '/app/fonction/valider_ajout_une_annonce.php',
+    'd969f6d6bc96647dbcb3bef5d99a5a5f' => $baseDir . '/app/fonction/supprimer_annonce.php',
+    'c7084060a8fb7f5277da21052cfa7672' => $baseDir . '/config.php',
 );

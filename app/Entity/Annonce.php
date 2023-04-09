@@ -6,20 +6,20 @@ class Annonce{
     private $villeD;
     private $villeA; 
     private $date; 
-    private $modeleVoiture; 
+    private $modelVoiture; 
     private $nbPlaces;
     private $email;
     private $tel; 
     private $nom; 
     private $prenom;
 
-    public function __construct($id,$Vdepart, $Varrivee, $dateA, $modVoiture, $nbPlacesDispo, $mail, $tel, $nom, $prenom)
+    public function __construct($id,$idVilleD, $nomVilleD, $idVilleA, $nomVilleA, $date, $modVoiture, $nbPlacesDispo, $mail, $tel, $nom, $prenom)
     {
         $this->id = $id;
-        $this->villeD = $Vdepart;
-        $this->villeA = $Varrivee;
-        $this->date = $dateA; 
-        $this->modeleVoiture = $modVoiture;
+        $this->villeD = new Ville($idVilleD,$nomVilleD);
+        $this->villeA = new Ville($idVilleA,$nomVilleA);
+        $this->date = $date; 
+        $this->modelVoiture = $modVoiture;
         $this->nbPlaces = $nbPlacesDispo;
         $this->email = $mail;
         $this->tel = $tel; 
@@ -43,7 +43,7 @@ class Annonce{
     }
 
     public function getVoiture(){    
-        return $this->modeleVoiture;
+        return $this->modelVoiture;
     }
 
     public function getNbPlace(){
@@ -86,7 +86,7 @@ class Annonce{
     }
     public function setVoiture($modVoiture)
     {
-        $this->modeleVoiture=$modVoiture;
+        $this->modelVoiture=$modVoiture;
     }
     public function setNbPlace($nbPlacesDispo)
     {

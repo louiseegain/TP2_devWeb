@@ -6,7 +6,15 @@
   "Entity\\": "app\\Entity",
   "Util\\": "util"
   }, 
-  "files": ["./app/fonction/afficher_annonces.php","./app/fonction/afficher_une_annonce.php"]
+  "files": [
+  "./app/fonction/afficher_annonces.php",
+  "./app/fonction/afficher_une_annonce.php",
+  "./app/fonction/ajouter_une_annonce.php",
+  "./app/fonction/modifier_une_annonce.php",
+  "./app/fonction/valider_modifier_une_annonce.php",
+  "./app/fonction/valider_ajout_une_annonce.php",
+  "./app/fonction/supprimer_annonce.php",
+  "./config.php"]
   },
   "require": {
     "nikic/fast-route": "^1.3",
