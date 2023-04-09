@@ -17,7 +17,7 @@ class AnnonceModel{
         $this->bd = new accesBD;
         $this->mesAnnonces = [];
        foreach($this->bd->getAnnonces() as $annonce){
-            $monAnnonce = new Annonce($annonce['id_annonce'],$annonce['villeD'],$this->bd->getNomVille($annonce['villeD']), $annonce['villeA'], $this->bd->getNomVille($annonce['villeA']), $annonce['date'], $annonce['heure'], $annonce['model'], $annonce['nbplaces'], $annonce['email'], $annonce['telephone'],$annonce['nom'], $annonce['prenom']);
+            $monAnnonce = new Annonce($annonce['id_annonce'],$annonce['villeD'],$this->bd->getNomVille($annonce['villeD']), $annonce['villeA'], $this->bd->getNomVille($annonce['villeA']), $annonce['date'], $annonce['model'], $annonce['nbplaces'], $annonce['email'], $annonce['telephone'],$annonce['nom'], $annonce['prenom']);
             $this->mesAnnonces[]=($monAnnonce);
         }
 
